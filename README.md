@@ -26,14 +26,14 @@ O projeto funciona em etapas modulares. Primeiro, coleta dados públicos dos can
 
 ## Tecnologias e ferramentas previstas
 
-- Python 3.10+
+- Python 3.12+
 - API oficial do YouTube (Google API Client)
 - Selenium (com controle de perfil e delays configurados)
 - Pandas e NumPy para manipulação de dados
 - SpaCy, scikit-learn e NLTK para NLP
 - Matplotlib ou Plotly para visualização
 - OpenAI ou Gemini API (para classificação de temas via prompt)
-- Estrutura modular com scripts separados por pergunta
+- SQLite
 
 ## Diferenciais
 
@@ -51,6 +51,4 @@ Este projeto está licenciado sob a MIT License. Veja o arquivo `LICENSE` para m
 
 Para dúvidas, sugestões ou contribuições futuras, entre em contato:
 
-Romário Diogo  
-[LinkedIn](https://www.linkedin.com/in/2606roma/)  
-GitHub: [Romario-diogo](https://github.com/Romario-diogo)
+Romário Diogo  [LinkedIn](https://www.linkedin.com/in/2606roma/)  
