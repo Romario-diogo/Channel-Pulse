@@ -1,64 +1,85 @@
-
 from dotenv import load_dotenv
-import requests
 import os
-import json
-
+import requests
+import json 
 load_dotenv()
+
 key = os.getenv("KEYS_YOUTUBE")
+name_channel = str(input("Nome do canal !!!"))
 
 
 url = "https://www.googleapis.com/youtube/v3/search"
-
 params = {
-    "part": "snippet", # Solicita as informações (img, descrição, data de criação)
-    "q": "Manual do Mundo",
+    "part":"snippet",
     "type": "channel",
+    "q": name_channel,
     "maxResults": 5,
     "key": key
 }
-res = requests.get(url, params=params)
-dados = res.json()
+
+resultado_params = requests.get(url, params=params) 
+dados_params = resultado_params.json()
+
+if not dados_params.get("items"):
+    print("Nenhum canal encontrado na busca.")
 
 
-canais_ids = []
-for item in dados['items']:
-    canais_ids.append(item['id']['channelId'])
+coleta_channel = []
+for id_channel in dados_params['items']:
+    coleta_channel.append(id_channel['id']['channelId'])
 
-
-canais_url = "https://www.googleapis.com/youtube/v3/channels"
-
-canais_params = {
-    "part": "snippet,statistics", # Solicita as informações e as metricas (numeros de (inscritos, views e vídeo))
-    "id": ",".join(canais_ids),
+url_channel = "https://www.googleapis.com/youtube/v3/channels"
+params = {
+    "part": "snippet,statistics",
+    "id":",".join(coleta_channel),
     "key": key
 }
+resultado_channel  = requests.get(url_channel, params=params)
+dados_channel = resultado_channel.json()
 
-canais_res = requests.get(canais_url, params=canais_params)
-canais_data = canais_res.json()
+if not dados_params.get("items"):
+    print("Nenhum canal encontrado na busca.")
 
-canal_oficial = None
-maior_numero = 0
 
-for canal in canais_data["items"]:
-    inscritos = int(canal["statistics"].get("subscriberCount", 0))
-    if inscritos > maior_numero:
-        maior_numero = inscritos
-        canal_oficial = canal
+channel_views = None
+cont_views = 0
+for channel in dados_channel['items']:
+    views = int(channel['statistics'].get("viewCount", 0))
+    if views > cont_views:
+        cont_views = views
+        channel_views = channel
+    if channel_views:
+        nome = channel_views["snippet"]['title']
+        id_channel = channel_views['id']
+        descricao = channel_views["snippet"]["description"]
+    #     print(f"Nome: {nome}")
+    #     print(f"ID: {id_channel}")
+    #     print(f"View: {cont_views:,}".replace(",", "."))
+    #     print(f"Descrição: {descricao}")
+    # else:
+    #     print("Nenhum canal com visualizações foi identificado.")
 
-if canal_oficial:
-    nome = canal_oficial["snippet"]["title"]
-    canal_id = canal_oficial["id"]
-    inscritos = canal_oficial["statistics"]["subscriberCount"]
-    descricao = canal_oficial["snippet"]["description"]
-    inscritos = int(inscritos)
-    print("Canal mais relevantes encontrados:")
-    print(f"Nome: {nome}")
-    print(f"ID: {canal_id}")
-    print(f"Inscritos: {inscritos:,}".replace(",", "."))
-    print(f"Descrição: {descricao}")
-else:
-    print("Nada encontrado ")
+# if salvar_em_arquivo:
+        params = {
+            "part": "statistics",
+            "id": id_channel,
+            "key": key
+        }
+        res_id = requests.get(url_channel, params=params)
+        dados_id = res_id.json()
 
-#with open("dados.json", 'w') as f:
-    #json.dump(dados, f , indent=2)
+        with open(nome, 'w') as f:
+            json.dump(dados_id, f , indent=2)
+
+    # nome_arquivo = nome # Nome do canal
+    # pasta_destino = "dados/brutos" # caminho do arquivo
+    # os.makedirs(pasta_destino, exist_ok=True) # Define o diretório 
+    # caminho_final = os.path.join(pasta_destino, nome_arquivo) # Junta caminho + nome do arquivo
+    # with open (caminho_final, 'w', encoding="utf-8") as f:
+    #     json.dump(channel_views, f, indent=2)
+    # print(f"Arquivo salvo em: {caminho_final}")
+
+
+
+
+
