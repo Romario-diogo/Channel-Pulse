@@ -11,8 +11,8 @@ key = os.getenv("KEYS_YOUTUBE")
 url = "https://www.googleapis.com/youtube/v3/search"
 
 params = {
-    "part": "snippet",
-    "q": "Felipe Neto",
+    "part": "snippet", # Solicita as informações (img, descrição, data de criação)
+    "q": "Manual do Mundo",
     "type": "channel",
     "maxResults": 5,
     "key": key
@@ -28,14 +28,14 @@ for item in dados['items']:
 
 canais_url = "https://www.googleapis.com/youtube/v3/channels"
 
-canis_params = {
-    "part": "snippet,statistics",
+canais_params = {
+    "part": "snippet,statistics", # Solicita as informações e as metricas (numeros de (inscritos, views e vídeo))
     "id": ",".join(canais_ids),
     "key": key
 }
 
-canis_res = requests.get(canais_url, params=canis_params)
-canais_data = canis_res.json()
+canais_res = requests.get(canais_url, params=canais_params)
+canais_data = canais_res.json()
 
 canal_oficial = None
 maior_numero = 0
@@ -51,11 +51,11 @@ if canal_oficial:
     canal_id = canal_oficial["id"]
     inscritos = canal_oficial["statistics"]["subscriberCount"]
     descricao = canal_oficial["snippet"]["description"]
-
+    inscritos = int(inscritos)
     print("Canal mais relevantes encontrados:")
     print(f"Nome: {nome}")
     print(f"ID: {canal_id}")
-    print(f"Inscritos: {inscritos}")
+    print(f"Inscritos: {inscritos:,}".replace(",", "."))
     print(f"Descrição: {descricao}")
 else:
     print("Nada encontrado ")
