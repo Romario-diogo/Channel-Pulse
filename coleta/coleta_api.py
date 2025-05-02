@@ -52,14 +52,8 @@ for channel in dados_channel['items']:
         nome = channel_views["snippet"]['title']
         id_channel = channel_views['id']
         descricao = channel_views["snippet"]["description"]
-    #     print(f"Nome: {nome}")
-    #     print(f"ID: {id_channel}")
-    #     print(f"View: {cont_views:,}".replace(",", "."))
-    #     print(f"Descrição: {descricao}")
-    # else:
-    #     print("Nenhum canal com visualizações foi identificado.")
 
-# if salvar_em_arquivo:
+        url_channel = "https://www.googleapis.com/youtube/v3/channels"
         params = {
             "part": "statistics",
             "id": id_channel,
