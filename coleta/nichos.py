@@ -29,13 +29,13 @@ for arquivo in os.listdir(pasta_json):
         if duplicados:
             repetidos_internos[arquivo] = duplicados
 
-# 🔁 Exibe repetidos entre arquivos
+#  Exibe repetidos entre arquivos
 print("\n🔎 Repetidos ENTRE arquivos diferentes:")
 for nome, arquivos in ocorrencias_globais.items():
     if len(arquivos) > 1:
         print(f'→ "{nome}" está nos arquivos: {", ".join(arquivos)}')
 
-# 🔁 Exibe repetidos dentro dos próprios arquivos
+#  Exibe repetidos dentro dos próprios arquivos
 print("\n🔎 Repetidos DENTRO de arquivos:")
 for arquivo, canais in repetidos_internos.items():
     print(f"\nArquivo: {arquivo}")
