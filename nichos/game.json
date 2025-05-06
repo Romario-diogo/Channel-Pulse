@@ -1,0 +1,44 @@
+{
+  "games": [
+    {
+      "nome": "Robin Hood Gamer",
+      "url": "https://www.youtube.com/@robinhoodgamer1"
+    },
+    {
+      "nome": "Jazzghost",
+      "url": "https://www.youtube.com/@jazzghost"
+    },
+    {
+      "nome": "Spok",
+      "url": "https://www.youtube.com/@Spok"
+    },
+    {
+      "nome": "Cadres",
+      "url": "https://www.youtube.com/@cadresplayer"
+    },
+    {
+      "nome": "Athos",
+      "url": "https://www.youtube.com/@athosgamer"
+    },
+    {
+      "nome": "Beto Gamer",
+      "url": "https://www.youtube.com/@betogamer"
+    },
+    {
+      "nome": "Geleia",
+      "url": "https://www.youtube.com/@geleia"
+    },
+    {
+      "nome": "BRKsEDU",
+      "url": "https://www.youtube.com/@BRKsEDU"
+    },
+    {
+      "nome": "PlayHard",
+      "url": "https://www.youtube.com/@PlayHard"
+    },
+    {
+      "nome": "Rezendeevil",
+      "url": "https://www.youtube.com/@rezendeevil"
+    }
+  ]
+}

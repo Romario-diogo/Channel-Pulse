@@ -1,0 +1,44 @@
+{
+  "musica": [
+    {
+      "nome": "Canal KondZilla",
+      "url": "https://www.youtube.com/@KondZilla"
+    },
+    {
+      "nome": "GR6 Explode",
+      "url": "https://www.youtube.com/@GR6Explode"
+    },
+    {
+      "nome": "Marília Mendonça",
+      "url": "https://www.youtube.com/@MariliaMendoncaOficial"
+    },
+    {
+      "nome": "Cia. Daniel Saboya",
+      "url": "https://www.youtube.com/@danielsaboya"
+    },
+    {
+      "nome": "Gusttavo Lima Oficial",
+      "url": "https://www.youtube.com/@GusttavoLimaOficial"
+    },
+    {
+      "nome": "Anitta",
+      "url": "https://www.youtube.com/@Anitta"
+    },
+    {
+      "nome": "Legenda Funk",
+      "url": "https://www.youtube.com/@LegendaFunk"
+    },
+    {
+      "nome": "FitDance",
+      "url": "https://www.youtube.com/@FitDance"
+    },
+    {
+      "nome": "Jorge & Mateus Oficial",
+      "url": "https://www.youtube.com/@jorgeemateus"
+    },
+    {
+      "nome": "Zé Neto & Cristiano",
+      "url": "https://www.youtube.com/@zenetoecristiano"
+    }
+  ]
+}

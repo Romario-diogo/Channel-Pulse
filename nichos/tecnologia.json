@@ -1,0 +1,44 @@
+{
+  "tecnologia": [
+    {
+      "nome": "Manual do Mundo",
+      "url": "https://www.youtube.com/@manualdomundo"
+    },
+    {
+      "nome": "TecMundo",
+      "url": "https://www.youtube.com/@TecMundo"
+    },
+    {
+      "nome": "Canaltech",
+      "url": "https://www.youtube.com/@canaltech"
+    },
+    {
+      "nome": "Filipe Deschamps",
+      "url": "https://www.youtube.com/@FilipeDeschamps"
+    },
+    {
+      "nome": "Código Fonte TV",
+      "url": "https://www.youtube.com/@codigofontetv"
+    },
+    {
+      "nome": "Curso em Vídeo",
+      "url": "https://www.youtube.com/@CursoemVideo"
+    },
+    {
+      "nome": "Rocketseat",
+      "url": "https://www.youtube.com/@rocketseat"
+    },
+    {
+      "nome": "Peixe Babel",
+      "url": "https://www.youtube.com/@PeixeBabel"
+    },
+    {
+      "nome": "Programador BR",
+      "url": "https://www.youtube.com/@ProgramadorBR"
+    },
+    {
+      "nome": "Nerdologia",
+      "url": "https://www.youtube.com/@nerdologia"
+    }
+  ]
+}

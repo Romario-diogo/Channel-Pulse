@@ -1,0 +1,44 @@
+{
+  "educacao": [
+    {
+      "nome": "Descomplica",
+      "url": "https://www.youtube.com/@Descomplica"
+    },
+    {
+      "nome": "Me Salva!",
+      "url": "https://www.youtube.com/@mesalva"
+    },
+    {
+      "nome": "Stoodi",
+      "url": "https://www.youtube.com/@StoodiOficial"
+    },
+    {
+      "nome": "Física Total",
+      "url": "https://www.youtube.com/@fisicatotal"
+    },
+    {
+      "nome": "Matemática Rio com Prof. Rafael Procopio",
+      "url": "https://www.youtube.com/@matematicario"
+    },
+    {
+      "nome": "Emílio Garofalo Filho",
+      "url": "https://www.youtube.com/@emiliogarofalofilho"
+    },
+    {
+      "nome": "Biologia Total com Prof. Jubilut",
+      "url": "https://www.youtube.com/@biologiatotal"
+    },
+    {
+      "nome": "Se Liga Nessa História",
+      "url": "https://www.youtube.com/@seliganessahistoria"
+    },
+    {
+      "nome": "Meteoro Brasil",
+      "url": "https://www.youtube.com/@meteoro"
+    },
+    {
+      "nome": "Pirula",
+      "url": "https://www.youtube.com/@pirulla25"
+    }
+  ]
+}

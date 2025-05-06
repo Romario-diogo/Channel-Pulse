@@ -1,0 +1,44 @@
+{
+  "Infantil": [
+    {
+      "nome": "Galinha Pintadinha",
+      "url": "https://www.youtube.com/user/galinhapintadinha"
+    },
+    {
+      "nome": "Maria Clara & JP",
+      "url": "https://www.youtube.com/c/MariaClaraJP"
+    },
+    {
+      "nome": "Luccas Neto – Luccas Toon",
+      "url": "https://www.youtube.com/c/LuccasNeto"
+    },
+    {
+      "nome": "Mundo Bita",
+      "url": "https://www.youtube.com/c/MundoBita"
+    },
+    {
+      "nome": "Enaldinho",
+      "url": "https://www.youtube.com/c/Enaldinho"
+    },
+    {
+      "nome": "Gato Galáctico",
+      "url": "https://www.youtube.com/c/GatoGalactico"
+    },
+    {
+      "nome": "Jacarelvis e Amigos",
+      "url": "https://www.youtube.com/user/jacarelvis"
+    },
+    {
+      "nome": "Flamiguinhos",
+      "url": "https://www.youtube.com/c/Flamiguinhos"
+    },
+    {
+      "nome": "Turma da Mônica",
+      "url": "https://www.youtube.com/c/TurmadaMonica"
+    },
+    {
+      "nome": "Kids Diana Show (versão em português)",
+      "url": "https://www.youtube.com/c/KidsDianaShowPortuguese"
+    }
+  ]
+}

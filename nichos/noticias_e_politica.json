@@ -1,0 +1,44 @@
+{
+  "noticias_e_politica": [
+    {
+      "nome": "Fatos Desconhecidos",
+      "url": "https://www.youtube.com/@fatosdesconhecidos"
+    },
+    {
+      "nome": "CNN Brasil",
+      "url": "https://www.youtube.com/@CNNBrasil"
+    },
+    {
+      "nome": "Brasil Paralelo",
+      "url": "https://www.youtube.com/@brasilparalelo"
+    },
+    {
+      "nome": "BBC News Brasil",
+      "url": "https://www.youtube.com/@bbcnewsbrasil"
+    },
+    {
+      "nome": "Os Pingos nos Is",
+      "url": "https://www.youtube.com/@ospingosnosis"
+    },
+    {
+      "nome": "MyNews",
+      "url": "https://www.youtube.com/@canalmynews"
+    },
+    {
+      "nome": "ICL Notícias",
+      "url": "https://www.youtube.com/@ICLNoticias"
+    },
+    {
+      "nome": "Portal do José",
+      "url": "https://www.youtube.com/@portaldojose"
+    },
+    {
+      "nome": "TV 247",
+      "url": "https://www.youtube.com/@brasil247"
+    },
+    {
+      "nome": "Jovem Pan News",
+      "url": "https://www.youtube.com/@JovemPanNews"
+    }
+  ]
+}

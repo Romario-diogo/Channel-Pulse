@@ -1,0 +1,44 @@
+{
+  "Pets e Animais": [
+    {
+      "nome": "Pequenos Príncipes",
+      "url": "https://www.youtube.com/@PequenosPrincipes"
+    },
+    {
+      "nome": "Tudo Sobre Cachorros",
+      "url": "https://www.youtube.com/@tudosobrecachorros"
+    },
+    {
+      "nome": "PeritoAnimal",
+      "url": "https://www.youtube.com/@PeritoAnimal"
+    },
+    {
+      "nome": "Isa Gateira",
+      "url": "https://www.youtube.com/@IsaGateira"
+    },
+    {
+      "nome": "Animal TV",
+      "url": "https://www.youtube.com/@AnimalTV"
+    },
+    {
+      "nome": "Coisas de Gato",
+      "url": "https://www.youtube.com/@CoisasdeGato"
+    },
+    {
+      "nome": "Amantes do Aquarismo",
+      "url": "https://www.youtube.com/@AmantesdoAquarismo"
+    },
+    {
+      "nome": "Lulu Animais",
+      "url": "https://www.youtube.com/@LuluAnimais"
+    },
+    {
+      "nome": "Julinho Casares",
+      "url": "https://www.youtube.com/@JulinhoCasares"
+    },
+    {
+      "nome": "Brasil Animal",
+      "url": "https://www.youtube.com/@BrasilAnimal"
+    }
+  ]
+}

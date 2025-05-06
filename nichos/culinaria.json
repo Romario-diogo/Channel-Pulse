@@ -1,0 +1,44 @@
+{
+  "culinaria": [
+    {
+      "nome": "Receitas de Pai",
+      "url": "https://www.youtube.com/@ReceitasdePai"
+    },
+    {
+      "nome": "Ana Maria Brogui",
+      "url": "https://www.youtube.com/@AnaMariaBrogui"
+    },
+    {
+      "nome": "Menino Prendado",
+      "url": "https://www.youtube.com/@MeninoPrendado"
+    },
+    {
+      "nome": "Culinária em Casa",
+      "url": "https://www.youtube.com/@CulinariaemCasa"
+    },
+    {
+      "nome": "Gabriel Freitas",
+      "url": "https://www.youtube.com/@GabrielFreitas"
+    },
+    {
+      "nome": "Receitas Da Cris",
+      "url": "https://www.youtube.com/@ReceitasDaCris"
+    },
+    {
+      "nome": "Panelinha (Rita Lobo)",
+      "url": "https://www.youtube.com/@Panelinha"
+    },
+    {
+      "nome": "Mohamad Hindi",
+      "url": "https://www.youtube.com/@mohindi"
+    },
+    {
+      "nome": "Dulce Delight (Raíza Costa)",
+      "url": "https://www.youtube.com/@DulceDelightBrasil"
+    },
+    {
+      "nome": "Presunto Vegetariano",
+      "url": "https://www.youtube.com/@PresuntoVegetariano"
+    }
+  ]
+}
