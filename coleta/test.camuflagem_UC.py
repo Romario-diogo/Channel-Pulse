@@ -1,7 +1,6 @@
 import undetected_chromedriver as uc
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
 
 import time
 
@@ -11,15 +10,19 @@ options = uc.ChromeOptions()
 # Recomendações para reduzir detecção
 options.add_argument("--disable-blink-features=AutomationControlled")
 options.add_argument("--start-maximized")
-#options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
 #options.add_argument("--lang=pt-BR,pt")
 options.add_argument(
     "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
 )
+options.binary_location = r"E:\Pasta (R)\Programas\chrome110\GoogleChromePortable64\App\Chrome-bin\110.0.5481.104\chrome.exe"
 
-# Abrir o navegador com versão fixa (se necessário)
-driver = uc.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+driver = uc.Chrome(
+    version_main=110,
+    options=options,
+    driver_executable_path=r"C:\SeleniumDrivers\chromedriver_110\chromedriver.exe"
+)
+
 
 # Injeções de camuflagem via CDP
 scripts = [
