@@ -19,8 +19,9 @@ options.binary_location = r"E:\Pasta (R)\Programas\chrome110\GoogleChromePortabl
 
 driver = uc.Chrome(
     version_main=110,
-    options=options,
-    driver_executable_path=r"C:\SeleniumDrivers\chromedriver_110\chromedriver.exe"
+    driver_executable_path=r"E:\Pasta (R)\Programas\chrome110\chromedriver.exe",
+    browser_executable_path=r"E:\Pasta (R)\Programas\chrome110\chrome.exe",  # <-- ESSE é o que faltava
+    options=options
 )
 
 
